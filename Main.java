@@ -90,6 +90,9 @@ class Main {
     // Insert At Position
     //===========================================================
     public void insertAtPosition(int val, int pos){
+        if(pos <= 0){
+            return head;
+        }
         if(pos == 1){
             insertAtHead(val);
             return;
